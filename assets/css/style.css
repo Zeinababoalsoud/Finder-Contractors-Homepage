@@ -90,6 +90,7 @@ nav img{
     }
     
 } 
+
 /* frist section  */
 main{
     width:100%;
@@ -163,8 +164,7 @@ form input{
 
 /* responsive design frist section*/
 @media only screen and (max-width: 992px) {
-    
-    
+ 
 } 
 /* second section */
 #section2{
@@ -233,11 +233,20 @@ form input{
     .bottom-div div{
         flex-basis:calc(100% /3);
     }
+    .bottom-div{
+        row-gap:20px;
+    }
+} 
+/* responsive design second section*/
+@media only screen and (max-width: 600px) {
+    .bottom-div div{
+        flex-basis:calc(100% /2);
+    }
 } 
 /* third section */
 #section3{
     width:90%;
-    height:500px;
+    /* height:500px; */
     display:flex;
     column-gap:120px;
 }
@@ -293,6 +302,7 @@ form input{
     height:calc(100% - 100px);
     display:flex;
     gap:10px;
+    /* flex-wrap: wrap; */
 }
 .bottom-div2 div{
     width:50%;
@@ -350,13 +360,24 @@ form input{
  .content a:hover{
     text-decoration: underline;
 }
-/* responsive design second section*/
+/* responsive design  section 3*/
 @media only screen and (max-width: 992px) {
     .left-div{
         display:none;
     }
     .right-div{
-        width:100%;}
+        width:100%;
+    }
+} 
+/* responsive design  section 3*/
+@media only screen and (max-width: 600px) {
+    .bottom-div2{
+        flex-wrap: wrap;
+    }
+    .bottom-div2 div{
+        width:100%;
+    }
+   
 } 
 /* section4 */
 #section4{
@@ -364,7 +385,7 @@ form input{
     height:500px;
     display:flex;
     flex-direction: column;
-    gap:20px;
+    row-gap:20px;
 }
 .section4-topdiv,
 .section3-topdiv{
@@ -438,6 +459,42 @@ form input{
    display:flex;
    gap:10px;
 }
+.buttonss{
+    display:flex;
+    width:90%;
+    justify-content: center;
+    align-items: center;
+    height:10px;
+    column-gap:10px;
+}
+.buttonss button{
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    border:none;
+    background-color: #757575;
+}
+/* responsive design  section 4*/
+@media only screen and (max-width: 992px) {
+    #hidden-div2{
+        display:none;
+    }
+    .bottomdiv-section4>div{
+        height:100%;
+        width:calc(100% /2);
+    }
+} 
+/* responsive design  section 4*/
+@media only screen and (max-width: 600px) {
+    #hidden-div1{
+        display:none;
+    }
+    .bottomdiv-section4>div{
+        height:100%;
+        width:100%;
+    }
+   
+} 
 /* section5 */
 #section5{
     width:100%;
@@ -553,6 +610,25 @@ form input{
     width:60px;
     height:60px;
 }
+/* responsive design  section 4*/
+@media only screen and (max-width: 992px) {
+    #hdiv2{
+        display:none;
+    }
+    .section6-bottomdiv>div{
+        height:100%;
+        width:calc(100% /2);
+    }
+} 
+/* responsive design  section 4*/
+@media only screen and (max-width: 600px) {
+    #hdiv1{
+        display:none;
+    }
+    .section6-bottomdiv>div{
+        width:100%;
+    }
+} 
 /* section7 */
 #section7{
     width:100%;
@@ -565,6 +641,8 @@ form input{
     height:100%;
 }
 .section7-rightdiv{
+    width:100%;
+    height:100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -636,6 +714,52 @@ a:hover,
 button:hover{
     cursor: pointer;
 }
+/* responsive design  section 7*/
+@media only screen and (max-width: 992px) {
+    #section7{
+        justify-content: center;
+        align-items: center;
+        height:300px;
+    }
+    #section7 >div{
+        width:100%;
+        height:100%;
+    }
+    .section7-leftdiv{
+        display:none;
+    }
+    .section7-rightdiv > div{
+        width:100%;
+        height:100%;
+    }
+    .heading-div,
+    .buttons{
+        width:100%;
+        height:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons .add-button{
+        background-color: rgb(216,81,81);
+        border:none;
+    }
+} 
+/* responsive design  section 7*/
+@media only screen and (max-width: 600px) {
+    #section7{
+        height:350px;
+    }
+    #hdiv1{
+        display:none;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+    .buttons >button{
+        width:90%;
+        height:50px;
+    } 
+} 
 /* section8 */
 #section8{
     width:90%;
@@ -692,6 +816,44 @@ button:hover{
     width:100%;
 
 }
+/* responsive design  section 8*/
+@media only screen and (max-width: 992px) {
+    #section8{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:350px;
+    }
+    #section8 > div{
+        width:70%;
+    }
+    .rightdiv-child{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+} 
+/* responsive design  section 8 */
+@media only screen and (max-width: 600px) {
+    #section8{
+        height:400px;
+    }
+    #section8 > div{
+        width:90%;
+    }
+    .rightdiv-child{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .btns{
+        flex-direction: column;
+    }
+    .btns >button{
+        width:100%;
+    } 
+} 
 /******************** section9 **********************/
 #section9{
     width:100%;
@@ -770,6 +932,30 @@ button:hover{
 .spans{
     font-size: 10px;
 }
+/* responsive design  section 9*/
+@media only screen and (max-width: 992px) {
+    #section9{
+        height:auto;
+    }
+    .bottomdiv-section9{
+        row-gap:20px;
+    }
+    .bottomdiv-section9>div{
+        width:100%;
+        height:100%; 
+    }  
+    .section9-content{
+        height:100%;
+        gap:25px;
+    }
+    .section9-content >div{
+        height:100%;
+    }
+} 
+/* responsive design  section 9 */
+@media only screen and (max-width: 600px) {
+   
+} 
 /* **********Footer*********** */
 footer{
     width:100%;
@@ -918,6 +1104,25 @@ footer{
     height:50px;
     color: rgb(156, 163, 175);
 }
+/* responsive design  footer*/
+@media only screen and (max-width: 992px) {
+   .footer-topdiv{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .footer-topdiv> div{
+    width:100%;
+    justify-content: center;
+    align-items: center;
+   }
+   
+  
+} 
+/* responsive design  footer */
+@media only screen and (max-width: 600px) {
+   
+} 
 
 
 

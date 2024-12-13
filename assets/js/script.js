@@ -1,29 +1,21 @@
-// object
-var array1 =["zeinab", 'lawan','amira'];
-// 
-var object1 ={
-    name:'zeinab',
-    age:24,
-    lastname:"Abu El-soud",
-    fullname:function(){
-        return this.name +" "+ this.age;
-    }
-    
-    // key = name >> age >> country>> object named key
-};
-console.log(object1.fullname())
-// query brackets : colon 
+var button = document.getElementById('join-btn');
+var backgroundImg =document.getElementById('section1');
 
-// var object2 =new Object();
-// object2.name="farha";
-// object2.age=25;
+function checkScreenSize() {
+  
+    if (window.matchMedia("(max-width: 992px)").matches) {
 
-// console.log(object1['name']);
-// console.log(object1.name);
-// console.log(object1);
+        button.innerText= " Join ";
+        button.style.width ='80px';
+        backgroundImg.style.backgroundImage ='none';
 
-// var question1 ={
-//     qtitle:"what is html ?",
-//     qnumber:1,
-// };
+    } 
+}
+
+window.addEventListener('resize', checkScreenSize);
+window.addEventListener('load', checkScreenSize);
+
+
+
+
 
