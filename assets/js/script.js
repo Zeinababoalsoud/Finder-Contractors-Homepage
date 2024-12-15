@@ -1,5 +1,5 @@
 var button = document.getElementById('join-btn');
-var backgroundImg =document.getElementById('section1');
+var backgroundImg =document.getElementById('services-section');
 
 function checkScreenSize() {
   

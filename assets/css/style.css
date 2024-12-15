@@ -3,10 +3,14 @@
     margin:0;
     box-sizing:border-box;
     font-family: sans-serif;
+    line-height: 1.6; 
 }
 html,
 body{
-    width:100%;
+    overflow-x: hidden;
+     min-height: 100vh;
+     width: 100%;  
+     max-width: 100vw;
 }
 /* navbar */
 nav{
@@ -30,6 +34,7 @@ ul{
 #logo span{
     font-weight:bold;
     font-size: 32px;
+    font-size: clamp(24px, 4vw, 32px);
 }
 ul{
     width:50%;  
@@ -43,7 +48,7 @@ a{
     text-decoration: none;
     color:black;
     font-weight:bold;
-    font-size:16px;
+    font-size: clamp(10px, 4vw, 16px);
 }
 li:hover{
     background-color: rgb(242,243,245);
@@ -90,17 +95,15 @@ nav img{
     }
     
 } 
-
-/* frist section  */
+/*******  section1  ********/
 main{
     width:100%;
   
 }
 main,
-#section1,
-#article1,
-#article1 >div,
-#article1 form{
+#services-section,
+#search-div,
+#search-div >div{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +113,7 @@ main,
 main{
     row-gap:100px;
 }
-#section1{
+#services-section{
     width:100%;
     min-height:750px;
     background-color: rgb(61,122,129);
@@ -120,34 +123,55 @@ main{
     background-position: center center;
    
 }
-#article1{
-    width:630px;
+#search-div{
+    width:50%;
     height:400px;
     justify-content: space-evenly;
-    gap:10px;
+    gap:20px;
 }
-#article1 >div{
+#search-div >div{
     width:100%;
     flex-direction: row;
 }
-#article1 form{
+#search-form{
+    height:20%;
     width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    gap:10px;
+    background-color: white;
+    border-radius: 15px;
 }
-form input{
-    width:100%;
-    height:73px;
-    border-radius: 10px;
-    border:none; 
+.input-group{
+    min-width:40%;
+    display:flex;
+    align-items: center;
+    column-gap:10px;
+    height:70%;
 }
-#article1 h1{
+.input-group input{
+   background-color: transparent;
+   border:none;
+   width:90%;
+
+}
+.in-div{
+    border-right: 1px solid #ccc;
+}
+#search-div h1{
     width:100%;
     height:134px;
-    font-size:54px;
+    font-size: clamp(32px, 4vw, 54px);
     text-align: center;
     font-weight: bold;
     color:white;
 }
-#article1 button{
+#services-buttons{
+    display:flex;
+}
+#services-buttons  button{
     width:20%;
     background-color: transparent;
     border:1px solid white;
@@ -156,18 +180,67 @@ form input{
     border-radius: 20px;
     font-weight: bold;
 }
-#article1 button:hover{
+#services-buttons button:hover{
     cursor:pointer;
     color:black;
     background-color: white;
 }
+#search-button{
+    width:20%;
+    text-align: center;
+    height:60%;
+    background-color: rgb(216,81,81,0.9);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    font-weight: 600;
+}
+#search-button:hover{
+    background-color: rgb(216,81,81);
+}
+#zipcode-input::placeholder,
+#service-input::placeholder{
+    font-weight: 500;
+    font-size: small;
+    color:#ccc;
+}
 
 /* responsive design frist section*/
 @media only screen and (max-width: 992px) {
+    #search-div{
+        width:80%;
+    }
+    #services-buttons{
+        flex-wrap: wrap; 
+    }
+    #services-buttons  button{
+        width:25%;
+    }
+
+} 
+@media only screen and (max-width:600px) {
+    #services-buttons  button{
+        width:30%;
+    }
+    #search-form{
+        padding:10px;
+        min-height:50%;
+        flex-direction: column;
+    }
+    #search-button{
+        width:100%;
+    }
+    .in-div{
+        border:none;
+        border-bottom: 2px solid #ccc;;
+    }
+    .input-group{
+        width:95%;
+    }
  
 } 
 /* second section */
-#section2{
+/* #section2{
     min-height:400px;
     width:100%;
     display:flex;
@@ -227,26 +300,26 @@ form input{
 }
 .bottom-div span{
     color:#E9ffff;
-}
+} */
 /* responsive design second section*/
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     .bottom-div div{
         flex-basis:calc(100% /3);
     }
     .bottom-div{
         row-gap:20px;
     }
-} 
+}  */
 /* responsive design second section*/
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .bottom-div div{
         flex-basis:calc(100% /2);
     }
-} 
+}  */
 /* third section */
-#section3{
+/* #section3{
     width:90%;
-    /* height:500px; */
+    height:500px;
     display:flex;
     column-gap:120px;
 }
@@ -302,7 +375,7 @@ form input{
     height:calc(100% - 100px);
     display:flex;
     gap:10px;
-    /* flex-wrap: wrap; */
+    
 }
 .bottom-div2 div{
     width:50%;
@@ -359,18 +432,18 @@ form input{
 }
  .content a:hover{
     text-decoration: underline;
-}
+} */
 /* responsive design  section 3*/
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     .left-div{
         display:none;
     }
     .right-div{
         width:100%;
     }
-} 
+}  */
 /* responsive design  section 3*/
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .bottom-div2{
         flex-wrap: wrap;
     }
@@ -378,9 +451,9 @@ form input{
         width:100%;
     }
    
-} 
+}  */
 /* section4 */
-#section4{
+/* #section4{
     width:90%;
     height:500px;
     display:flex;
@@ -404,7 +477,7 @@ form input{
 .bottom-container{
     display:flex;
     flex-direction: column;
-    /* gap:10px; */
+    /* gap:10px; 
 }
 .bottom-container img{
     height:300px;
@@ -473,9 +546,9 @@ form input{
     border-radius: 50%;
     border:none;
     background-color: #757575;
-}
+} */
 /* responsive design  section 4*/
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     #hidden-div2{
         display:none;
     }
@@ -483,9 +556,9 @@ form input{
         height:100%;
         width:calc(100% /2);
     }
-} 
+}  */
 /* responsive design  section 4*/
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     #hidden-div1{
         display:none;
     }
@@ -494,9 +567,9 @@ form input{
         width:100%;
     }
    
-} 
+}  */
 /* section5 */
-#section5{
+/* #section5{
     width:100%;
     min-height:700px;
     background-color: rgb(245,247,250);
@@ -560,17 +633,17 @@ form input{
 }
 .section5-content h6:hover{
     cursor:pointer;
-}
+} */
 /* responsive design second section*/
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     .section5-childs{
         width:100%;
         
     }
    
-} 
+}  */
 /*section6*/
-#section6{
+/* #section6{
     width:100%;
     height:300px;
     display:flex;
@@ -609,9 +682,9 @@ form input{
 .section6-bottomchilds img{
     width:60px;
     height:60px;
-}
+} */
 /* responsive design  section 4*/
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     #hdiv2{
         display:none;
     }
@@ -619,18 +692,18 @@ form input{
         height:100%;
         width:calc(100% /2);
     }
-} 
+}  */
 /* responsive design  section 4*/
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     #hdiv1{
         display:none;
     }
     .section6-bottomdiv>div{
         width:100%;
     }
-} 
+}  */
 /* section7 */
-#section7{
+/* #section7{
     width:100%;
     height:600px;
     display:flex;
@@ -713,9 +786,9 @@ form input{
 a:hover,
 button:hover{
     cursor: pointer;
-}
+} */
 /* responsive design  section 7*/
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     #section7{
         justify-content: center;
         align-items: center;
@@ -743,9 +816,9 @@ button:hover{
         background-color: rgb(216,81,81);
         border:none;
     }
-} 
+}  */
 /* responsive design  section 7*/
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     #section7{
         height:350px;
     }
@@ -759,9 +832,9 @@ button:hover{
         width:90%;
         height:50px;
     } 
-} 
+}  */
 /* section8 */
-#section8{
+/* #section8{
     width:90%;
     height:300px;
     background-color: rgb(251,238,238);
@@ -815,9 +888,9 @@ button:hover{
     height:100%;
     width:100%;
 
-}
+} */
 /* responsive design  section 8*/
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     #section8{
         flex-direction: column;
         align-items: center;
@@ -833,9 +906,9 @@ button:hover{
         text-align: center;
     }
     
-} 
+}  */
 /* responsive design  section 8 */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     #section8{
         height:400px;
     }
@@ -853,9 +926,9 @@ button:hover{
     .btns >button{
         width:100%;
     } 
-} 
+}  */
 /******************** section9 **********************/
-#section9{
+/* #section9{
     width:100%;
     height:500px;
     display:flex;
@@ -931,9 +1004,9 @@ button:hover{
 }
 .spans{
     font-size: 10px;
-}
+} */
 /* responsive design  section 9*/
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     #section9{
         height:auto;
     }
@@ -951,13 +1024,13 @@ button:hover{
     .section9-content >div{
         height:100%;
     }
-} 
+}  */
 /* responsive design  section 9 */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
    
-} 
+}  */
 /* **********Footer*********** */
-footer{
+/* footer{
     width:100%;
     min-height:600px;
     display:flex;
@@ -1103,9 +1176,9 @@ footer{
     width:90%;
     height:50px;
     color: rgb(156, 163, 175);
-}
+} */
 /* responsive design  footer*/
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
    .footer-topdiv{
     flex-direction: column;
     justify-content: center;
@@ -1118,11 +1191,11 @@ footer{
    }
    
   
-} 
+}  */
 /* responsive design  footer */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
    
-} 
+}  */
 
 
 

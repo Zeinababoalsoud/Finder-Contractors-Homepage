@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/images/download (7).svg" sizes="32x32">
     <title>Finder | Contractors - Homepage</title>
 </head>
@@ -12,11 +12,11 @@
     <nav>
         <div id="list">
             <button>
-                <img src="assets/images/hamburger_menu_navigation_navbar_icon.png" alt="">
+                <img src="assets/images/hamburger_menu_navigation_navbar_icon.png" />
             </button>
         </div>
         <div id="logo">
-          <img src="assets/images/download (7).svg"></img>
+          <img src="assets/images/download (7).svg" />
           <span>Finder</span>
         </div>
         <ul>
@@ -28,35 +28,47 @@
             <li><a href="">Components</a></li>
         </ul>
         <div id="btn">
-            <img src="assets/images/sun.png">
-            <img src="assets/images/user.png">
+            <img src="assets/images/sun.png" />
+            <img src="assets/images/user.png" />
             <button id="join-btn">+ Join New Network</button>
         </div>
     </nav>
     <main>
         <!-- ********section1************** -->
-        <section id="section1">
-           
-            <!-- <div id="article1">
+        <section id="services-section">
+            <div id="search-div">
                 <div>
                     <h1>Explore top-rated certified pros nearby</h1>
                 </div>
-                <form>
-                    <input type="text">
-                </form>
-                <div>
-                    <button>Handyperson</button>
-                    <button>Electrcian</button>
-                    <button>Plumbing</button>
-                    <button>Landscaping</button>
-                    <button>Roofing</button>
-                </div>
-            </div> -->
-           
+                <form id="search-form">
+                    
+                    <div class="input-group in-div">
+                        <i class="fas fa-search"></i> 
+                        <input type="text" placeholder="What service do you need?" id="service-input">
+                    </div>
 
+                    
+                    <div class="input-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Zip code" id="zipcode-input">
+                    </div>
+
+                    <!-- Search button -->
+                    <button type="submit" id="search-button">
+                         Search
+                    </button>
+                </form>
+                <div id="services-buttons">
+                    <button id="handyperson-button">Handyperson</button>
+                    <button id="electrician-button">Electrician</button>
+                    <button id="plumbing-button">Plumbing</button>
+                    <button id="landscaping-button">Landscaping</button>
+                    <button id="roofing-button">Roofing</button>
+                </div>
+            </div>
         </section>
         <!-- ********section2************** -->
-        <section id="section2">  
+        <!-- <section id="section2">  
             <div class="top-div"> 
                 <h1>Browse Pros in your area</h1>
                 <button>
@@ -116,9 +128,9 @@
             </div>
             
             
-        </section>
+        </section> -->
         <!-- ********section3************** -->
-        <section id="section3">
+        <!-- <section id="section3">
             <div class="left-div">
                 <div class="one">
                     <h1>Get Matched With Local Pros</h1>
@@ -206,9 +218,9 @@
                 </div>
             </div>
             
-        </section>
+        </section> -->
            <!-- ********section4************** -->
-        <section id="section4">
+        <!-- <section id="section4">
             <div class="top-div section4-topdiv"> 
                 <h1>Popular home projects</h1>
                 <button>
@@ -262,7 +274,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="buttonss">
                 <button id="btn1"></button>
                 <button id="btn2"></button>
@@ -271,7 +283,7 @@
 
         </section>
            <!-- ********section5************** -->
-        <section id="section5">
+        <!-- <section id="section5">
             <div class="section5-container">
                 <div class="top-div section4-topdiv"> 
                     <h1>Expert Advice</h1>
@@ -333,9 +345,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- section6 -->
-         <section id="section6">
+         <!-- <section id="section6">
             <div class="section6-topdiv">
                 <h1>How it works</h1>
                 <p>Effortlessly find, connect, and hire the perfect contractor for your job - all in just three easy steps. </p>
@@ -358,9 +370,9 @@
                     <p>Receive quote from interested contractors .</p> 
                 </div>
             </div>
-         </section>
+         </section> -->
          <!-- section7 -->
-          <section id="section7">
+          <!-- <section id="section7">
             <div class="section7-rightdiv">
                 <div class="section7-div1">
                     <div class="heading-div">
@@ -382,9 +394,9 @@
                 <img src="assets/images/become-pro-cta.jpg" alt="">
              </div>
 
-          </section>
+          </section> -->
           <!-- section8 -->
-           <section id="section8">
+           <!-- <section id="section8">
             <div class="section8-rightdiv">
                 <div class="rightdiv-child">
                     <h1>Get Finder App</h1>
@@ -410,9 +422,9 @@
             </div>
            
 
-           </section>
+           </section> -->
            <!-- section9 -->
-            <section id="section9">
+            <!-- <section id="section9">
                 <div class="top-div section9-topdiv"> 
                     <h1>Common prices references</h1>
                     <button>
@@ -501,9 +513,9 @@
 
                 </div>
 
-            </section>
+            </section> -->
             <!-- footer -->
-            <footer>
+            <!-- <footer>
                 <div class="footer-topdiv">
                     <div class="left-topdiv">
                         <img src="assets/images/email-9-svgrepo-com.svg" >
@@ -595,7 +607,7 @@
                 <div class="copyright">
                     <p> &copy; Zeinab Abu El-soud Abbass</p>
                 </div>
-            </footer>
+            </footer> -->
     </main>
   
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> 
