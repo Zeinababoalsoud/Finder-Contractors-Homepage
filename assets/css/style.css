@@ -33,7 +33,6 @@ ul{
 }
 #logo span{
     font-weight:bold;
-    font-size: 32px;
     font-size: clamp(24px, 4vw, 32px);
 }
 ul{
@@ -42,13 +41,18 @@ ul{
 }
 li{
     list-style-type: none;
-    padding:15px;
+    padding:10px;
+    display:flex;
+    align-items: center;
+    gap:5px;
+    font-weight:500px;
+    font-size: clamp(8px, 3vw, 10px);
 }
 a{
     text-decoration: none;
     color:black;
     font-weight:bold;
-    font-size: clamp(10px, 4vw, 16px);
+    font-size: clamp(8px, 4vw, 16px);
 }
 li:hover{
     background-color: rgb(242,243,245);
@@ -234,37 +238,42 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
   }
   
   .close-btn {
     background: transparent;
     border: none;
-    font-size: 24px;
+    font-size: 15px;
     cursor: pointer;
+    color:rgb(91, 89, 89);
   }
   
   .silder-ul {
     display:flex;
     flex-direction: column;
     width:100%;
-    gap:5px;
+    gap:10px;
     align-items: flex-start;
   }
   
   .silder-ul li {
-    margin: 15px 0;
     font-size: 15px;
     cursor: pointer;
-    color:rgb(63, 63, 63);
+    color:rgb(100, 98, 98);
     width:100%;
-    font-weight: 400;
+    display:flex;
+    justify-content: space-between;
+  }
+  .silder-ul li a {
+    color:rgb(91, 89, 89);
+    width:100%;
+    font-weight: 200;
   }
   .silder-ul li:hover {
     background-color: #ccc;
     border-radius: 15px;
 }
-  
-
 /* responsive design frist section*/
 @media only screen and (max-width: 992px) {
     #search-div{
@@ -316,7 +325,6 @@ main{
     .img-logo{
         display:none;
     }
- 
 } 
 /* second section */
 /* #section2{
