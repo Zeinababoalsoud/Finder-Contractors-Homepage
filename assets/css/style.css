@@ -179,6 +179,7 @@ main{
     padding:10px;
     border-radius: 20px;
     font-weight: bold;
+    font-size: medium;
 }
 #services-buttons button:hover{
     cursor:pointer;
@@ -219,16 +220,20 @@ main{
 
 } 
 @media only screen and (max-width:600px) {
+    #search-button{
+        width:100%;
+    }
+    #services-buttons{
+        width:100%;
+    }
     #services-buttons  button{
-        width:30%;
+        width:100px;
+        font-size: small;
     }
     #search-form{
         padding:10px;
         min-height:50%;
         flex-direction: column;
-    }
-    #search-button{
-        width:100%;
     }
     .in-div{
         border:none;
@@ -236,6 +241,10 @@ main{
     }
     .input-group{
         width:95%;
+    }
+    nav img{
+        width:20px;
+        height:20px;
     }
  
 } 
