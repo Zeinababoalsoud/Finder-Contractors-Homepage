@@ -44,8 +44,8 @@ li{
     padding:10px;
     display:flex;
     align-items: center;
-    gap:5px;
-    font-weight:500px;
+    gap:10px;
+    font-weight:400px;
     font-size: clamp(8px, 3vw, 10px);
 }
 a{
@@ -266,7 +266,7 @@ main{
     justify-content: space-between;
   }
   .silder-ul li a {
-    color:rgb(91, 89, 89);
+    color:rgb(68, 66, 66);
     width:100%;
     font-weight: 200;
   }
@@ -287,6 +287,10 @@ main{
     }
     #services-buttons  button{
         width:25%;
+    }
+    #hamburger_img{
+        width:30px;
+        height:30px;
     }
 } 
 @media only screen and (max-width:600px) {
@@ -325,9 +329,13 @@ main{
     .img-logo{
         display:none;
     }
+    #hamburger_img{
+        width:25px;
+        height:25px;
+    }
 } 
-/* second section */
-/* #section2{
+/******** section 2 **********/
+#section2{
     min-height:400px;
     width:100%;
     display:flex;
@@ -363,7 +371,7 @@ main{
 }
 .top-div button:hover span{
     cursor:pointer;
-    border-bottom: 3px solid rgb(17,24,39);
+    border-bottom: 2px solid rgb(17,24,39);
 }
 .bottom-div{
     width:90%;
@@ -387,22 +395,35 @@ main{
 }
 .bottom-div span{
     color:#E9ffff;
-} */
+    font-weight:300;
+}
+.top-div h1,
+.top-div span{
+    font-size:clamp(20px,4vw,8px)   
+}
 /* responsive design second section*/
-/* @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     .bottom-div div{
         flex-basis:calc(100% /3);
     }
     .bottom-div{
         row-gap:20px;
     }
-}  */
+} 
 /* responsive design second section*/
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .bottom-div div{
         flex-basis:calc(100% /2);
     }
-}  */
+}  
+@media only screen and (max-width: 450px) {
+    .bottom-div div{
+        flex-basis:calc(100%);
+    }
+    /* .top-div h1{
+        font-size:10px;   
+    } */
+}  
 /* third section */
 /* #section3{
     width:90%;
@@ -519,7 +540,7 @@ main{
 }
  .content a:hover{
     text-decoration: underline;
-} */
+}
 /* responsive design  section 3*/
 /* @media only screen and (max-width: 992px) {
     .left-div{
