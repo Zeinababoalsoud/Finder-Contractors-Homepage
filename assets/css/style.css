@@ -365,7 +365,7 @@ main{
 }
 #section2 span{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     color:rgb(17,24,39);
     padding: 3px;
 }
@@ -409,6 +409,9 @@ main{
     .bottom-div{
         row-gap:20px;
     }
+    .top-div h1{
+        font-size: 15px;
+    }
 } 
 /* responsive design second section*/
 @media only screen and (max-width: 600px) {
@@ -424,7 +427,7 @@ main{
     
 }  
 /* third section */
-/* #section3{
+ #section3{
     width:90%;
     height:500px;
     display:flex;
@@ -541,16 +544,19 @@ main{
     text-decoration: underline;
 }
 /* responsive design  section 3*/
-/* @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
+    #section3{
+        height:unset;
+    }
     .left-div{
         display:none;
     }
     .right-div{
         width:100%;
     }
-}  */
+} 
 /* responsive design  section 3*/
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .bottom-div2{
         flex-wrap: wrap;
     }
@@ -558,9 +564,9 @@ main{
         width:100%;
     }
    
-}  */
-/* section4 */
-/* #section4{
+} 
+/**************** section4 ****************/
+ #section4{
     width:90%;
     height:500px;
     display:flex;
@@ -584,7 +590,7 @@ main{
 .bottom-container{
     display:flex;
     flex-direction: column;
-    /* gap:10px; 
+    /* gap:10px; */
 }
 .bottom-container img{
     height:300px;
@@ -653,9 +659,9 @@ main{
     border-radius: 50%;
     border:none;
     background-color: #757575;
-} */
+} 
 /* responsive design  section 4*/
-/* @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     #hidden-div2{
         display:none;
     }
@@ -663,9 +669,9 @@ main{
         height:100%;
         width:calc(100% /2);
     }
-}  */
+} 
 /* responsive design  section 4*/
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     #hidden-div1{
         display:none;
     }
@@ -674,9 +680,9 @@ main{
         width:100%;
     }
    
-}  */
+} 
 /* section5 */
-/* #section5{
+#section5{
     width:100%;
     min-height:700px;
     background-color: rgb(245,247,250);
@@ -740,17 +746,17 @@ main{
 }
 .section5-content h6:hover{
     cursor:pointer;
-} */
+}
 /* responsive design second section*/
-/* @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     .section5-childs{
         width:100%;
         
     }
    
-}  */
+} 
 /*section6*/
-/* #section6{
+#section6{
     width:100%;
     height:300px;
     display:flex;
@@ -789,9 +795,9 @@ main{
 .section6-bottomchilds img{
     width:60px;
     height:60px;
-} */
+} 
 /* responsive design  section 4*/
-/* @media only screen and (max-width: 992px) {
+ @media only screen and (max-width: 992px) {
     #hdiv2{
         display:none;
     }
@@ -799,18 +805,18 @@ main{
         height:100%;
         width:calc(100% /2);
     }
-}  */
+}  
 /* responsive design  section 4*/
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     #hdiv1{
         display:none;
     }
     .section6-bottomdiv>div{
         width:100%;
     }
-}  */
+} 
 /* section7 */
-/* #section7{
+#section7{
     width:100%;
     height:600px;
     display:flex;
@@ -893,9 +899,9 @@ main{
 a:hover,
 button:hover{
     cursor: pointer;
-} */
+}
 /* responsive design  section 7*/
-/* @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     #section7{
         justify-content: center;
         align-items: center;
@@ -923,9 +929,9 @@ button:hover{
         background-color: rgb(216,81,81);
         border:none;
     }
-}  */
+} 
 /* responsive design  section 7*/
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     #section7{
         height:350px;
     }
@@ -939,9 +945,9 @@ button:hover{
         width:90%;
         height:50px;
     } 
-}  */
+} 
 /* section8 */
-/* #section8{
+#section8{
     width:90%;
     height:300px;
     background-color: rgb(251,238,238);
@@ -995,9 +1001,9 @@ button:hover{
     height:100%;
     width:100%;
 
-} */
+}
 /* responsive design  section 8*/
-/* @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     #section8{
         flex-direction: column;
         align-items: center;
@@ -1013,9 +1019,9 @@ button:hover{
         text-align: center;
     }
     
-}  */
+} 
 /* responsive design  section 8 */
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     #section8{
         height:400px;
     }
@@ -1033,9 +1039,9 @@ button:hover{
     .btns >button{
         width:100%;
     } 
-}  */
+} 
 /******************** section9 **********************/
-/* #section9{
+#section9{
     width:100%;
     height:500px;
     display:flex;
@@ -1111,9 +1117,9 @@ button:hover{
 }
 .spans{
     font-size: 10px;
-} */
+}
 /* responsive design  section 9*/
-/* @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     #section9{
         height:auto;
     }
@@ -1131,11 +1137,11 @@ button:hover{
     .section9-content >div{
         height:100%;
     }
-}  */
+} 
 /* responsive design  section 9 */
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
    
-}  */
+} 
 /* **********Footer*********** */
 /* footer{
     width:100%;
