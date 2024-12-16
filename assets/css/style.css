@@ -115,7 +115,7 @@ main,
     flex-direction: column;
 }
 main{
-    row-gap:100px;
+    row-gap:50px;
 }
 #services-section{
     width:100%;
@@ -351,10 +351,6 @@ main{
     justify-content: space-between;
     width:90%;
 }
-.top-div img{
-    width:20px;
-    height:20px;
-}
 .top-div button{
     display:flex;
     align-items: center;
@@ -399,7 +395,7 @@ main{
 }
 .top-div h1,
 .top-div span{
-    font-size:clamp(20px,4vw,8px)   
+    font-size:clamp(8px,4vw,20px)   
 }
 /* responsive design second section*/
 @media only screen and (max-width: 992px) {
@@ -554,6 +550,7 @@ main{
     .right-div{
         width:100%;
     }
+    
 } 
 /* responsive design  section 3*/
 @media only screen and (max-width: 600px) {
@@ -562,6 +559,9 @@ main{
     }
     .bottom-div2 div{
         width:100%;
+    }
+    .div1{
+        row-gap:20px;
     }
    
 } 
@@ -734,26 +734,45 @@ main{
     padding:5px;
     font-size:16px;
     font-weight:400;
+    font-size:clamp(10px,4vw,20px);
 }
 .section5-content a{
-    font-size:20px;
+    font-size:clamp(10px,4vw,20px);
     font-weight:600;
 }
 .section5-content p,
 .section5-content span{
-    font-size:20px;
+    font-size:clamp(10px,4vw,20px);
     color: rgb(78, 85, 98);
 }
 .section5-content h6:hover{
     cursor:pointer;
 }
-/* responsive design second section*/
+/***** responsive design section 5*******/
 @media only screen and (max-width: 992px) {
-    .section5-childs{
-        width:100%;
-        
+    #section5{
+        height:unset;
     }
-   
+    .section5-childs{
+        width:100%;  
+    } 
+} 
+@media only screen and (max-width: 600px) {
+   .imagewrapper{
+    height:30%;
+    width:20%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top:10px;
+   }
+   .section5-bottomdiv{
+    row-gap:20px;
+   }
+   .section5-childs{
+    justify-content: flex-start;
+    align-items: flex-start;
+   }  
 } 
 /*section6*/
 #section6{
@@ -835,11 +854,12 @@ main{
 }
 .section7-rightdiv >div{
     width:70%;
-    height:50%;
+    height:60%;
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    
 }
 .section7-leftdiv img{
     width:100%;
@@ -853,9 +873,9 @@ main{
     gap:10px;
     height:100px;
 }
-.heading-div{
+.heading-div h1{
     color:white;
-    font-size: 20px;
+    font-size:clamp(25px ,4vw,10px);
 }
 .buttons{
     flex-direction: row;
@@ -900,6 +920,13 @@ a:hover,
 button:hover{
     cursor: pointer;
 }
+.lmore-btn .fas{
+    color:white;
+}
+.lmore-btn:hover i{
+    color:black;
+}
+
 /* responsive design  section 7*/
 @media only screen and (max-width: 992px) {
     #section7{
