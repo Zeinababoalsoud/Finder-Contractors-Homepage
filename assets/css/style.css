@@ -1369,17 +1369,32 @@ footer{
         height:30%;
         display:block;
     }
+    .footer-container{
+        width:100%;
+    }
+    .footer-container >div{
+        width:50%;
+    }
     .footer-bottomdiv{
         height:auto;
     }
     .footer-middlediv{
-        min-height:600px;
+        min-height:500px;
     }
     .footer-bottomdiv{
         min-height:200px;
     }
     .copyright{
         min-height:100px;
+    }
+    .heading h2{
+        font-size:12px;;
+    }
+    .links a{
+        font-size: 8px;;
+    }
+    .links-maincontainer{
+        justify-content: space-between;
     }
     
    
